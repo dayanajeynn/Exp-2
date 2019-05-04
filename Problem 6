@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main ()
+{
+	
+	inta,b,c,d;
+	
+	for(a=0;a<=20;a++)
+	{
+	if(a==0)
+	{
+	cout<< a << " ";
+	}
+	
+	d= b + c;
+	b=c;
+	c=d;
+	
+	cout<< d << " " ;
+	}
+	_getch();
+	return 0;
+}
