@@ -1,0 +1,48 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	float hours;
+	char package;
+	
+	cout<< "Please enter your chosen package." <<endl;
+	cin>> package;
+	cout<< "Please enter the number of hours that were used" <<endl;
+	cin>> hours;
+	
+	switch (package)
+	{
+	
+	case 'A':
+	case 'a':
+		if (hours <=10)
+		cout<< "Your total amount due is P995/mo" <<endl;
+		else
+		cout<< "Your total amount due is " << (995 + 20 * (hours - 10));
+		break;
+	case 'B':
+	case 'b':
+		if (hours <=20)
+		cout<< "Your total amount due is P1495/mo" <<endl;
+		else
+		cout<< "Your total amount due is " << (1495 + 10 * (hours - 10));
+		break;
+	case 'C':
+	case 'c':		
+		if (hours > 0)
+		cout<< "Your total amount due is P1995/mo" <<endl;
+		else
+		cout<< "Not valid.";
+		break;
+	
+	default:
+		cout<< "You may only choose from letters A, B, and C";
+	
+	}
+	_getch();
+	return 0;
+}
+	
